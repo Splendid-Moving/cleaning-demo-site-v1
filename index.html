@@ -49,6 +49,7 @@
     <a href="tel:+13235550192">(323) 555-0192</a>
     <a href="#contact" class="btn btn-dark">Book Now</a>
   </div>
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
 
   <main>
 
@@ -299,7 +300,7 @@
 
         <!-- Additional about images -->
         <div class="card col-4" style="padding:0; overflow:hidden; min-height:220px;">
-          <img src="https://images.unsplash.com/photo-1527515637462-cff94edd59c6?auto=format&fit=crop&w=600&q=75" alt="Professional cleaner at work" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=600&q=75" alt="Professional cleaner at work" style="width:100%;height:220px;object-fit:cover;" loading="lazy">
         </div>
         <div class="card col-4" style="padding:0; overflow:hidden; min-height:220px;">
           <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=600&q=75" alt="Eco-friendly cleaning supplies" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
@@ -662,20 +663,29 @@
     /* ── Mobile nav ── */
     const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('mobileOverlay');
+
+    function openMobileMenu() {
+      menu.classList.add('open');
+      overlay.classList.add('open');
+      hamburger.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      menu.classList.remove('open');
+      overlay.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
 
     hamburger.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      hamburger.classList.toggle('open', open);
-      hamburger.setAttribute('aria-expanded', open);
-      document.body.style.overflow = open ? 'hidden' : '';
+      menu.classList.contains('open') ? closeMobileMenu() : openMobileMenu();
     });
+    overlay.addEventListener('click', closeMobileMenu);
     menu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        menu.classList.remove('open');
-        hamburger.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
+      a.addEventListener('click', closeMobileMenu);
     });
 
     /* ── Counter animation ── */

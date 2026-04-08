@@ -209,6 +209,21 @@ p { color: var(--text-secondary); line-height: 1.65; }
   width: 100%;
   padding: 16px;
 }
+/* Fix btn-dark text invisible over dark mobile menu bg */
+.mobile-menu .btn-dark {
+  color: white !important;
+}
+
+/* Mobile menu overlay backdrop */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 198;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(2px);
+}
+.mobile-menu-overlay.open { display: block; }
 
 /* ── Hero ─────────────────────────────────────────────── */
 .hero {
@@ -347,7 +362,9 @@ p { color: var(--text-secondary); line-height: 1.65; }
 
 /* span classes */
 .col-4  { grid-column: span 4; }
+.col-5  { grid-column: span 5; }
 .col-6  { grid-column: span 6; }
+.col-7  { grid-column: span 7; }
 .col-8  { grid-column: span 8; }
 .col-12 { grid-column: span 12; }
 
@@ -638,11 +655,20 @@ p { color: var(--text-secondary); line-height: 1.65; }
    RESPONSIVE — mobile-first
 ══════════════════════════════════════════════════════ */
 
+/* ── Small desktop — prevent nav overflow ── */
+@media (max-width: 960px) {
+  .nav-links { gap: 18px; }
+  /* Hide the phone-number ghost button; keep Book Now */
+  .nav-right .btn-ghost { display: none; }
+}
+
 /* ── Tablet ── */
 @media (max-width: 1024px) {
   .container { padding: 0 20px; }
   .col-4 { grid-column: span 6; }
+  .col-5 { grid-column: span 6; }
   .col-6 { grid-column: span 6; }
+  .col-7 { grid-column: span 6; }
   .col-8 { grid-column: span 12; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
   .stats-strip { grid-template-columns: repeat(2, 1fr); }
@@ -660,7 +686,7 @@ p { color: var(--text-secondary); line-height: 1.65; }
   .nav-hamburger { display: flex; }
 
   /* Bento: all full width */
-  .col-4, .col-6, .col-8, .col-12 { grid-column: span 12; }
+  .col-4, .col-5, .col-6, .col-7, .col-8, .col-12 { grid-column: span 12; }
   .bento { gap: 12px; }
   .card { padding: 28px 24px; }
 
