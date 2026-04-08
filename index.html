@@ -3,253 +3,721 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dana K Cleaning | Reliable Los Angeles Home Cleaning</title>
+  <title>Dana K Cleaning | Professional Home Cleaning in Los Angeles</title>
+  <meta name="description" content="Top-rated home cleaning service in Los Angeles. Licensed, insured, and trusted by 500+ families. Book online in 60 seconds.">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="nav-glass">
-    <div class="container nav-container">
-      <div class="logo">Dana K</div>
-      <div class="nav-links" style="display:none; gap: 24px; font-weight: 500; font-size: 0.95rem;">
-        <a href="#services" style="color: var(--text-primary);">Services</a>
-        <a href="#how-it-works" style="color: var(--text-primary);">How it Works</a>
-        <a href="#reviews" style="color: var(--text-primary);">Reviews</a>
+  <!-- ══════════════════════
+       NAVIGATION
+  ══════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">Dana K Cleaning</a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-right">
+          <a href="tel:+13235550192" class="btn btn-ghost" style="font-size:0.875rem; padding:10px 18px;">(323) 555-0192</a>
+          <a href="#contact" class="btn btn-dark">Book Now</a>
+        </div>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <button class="btn-primary">Book Now</button>
     </div>
   </header>
 
-  <main class="container">
-    
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Reliable, thorough home cleaning for LA.</h1>
-      <p>We handle the mess so you don't have to. Enjoy a spotless home with our trusted, local cleaning professionals.</p>
-      
-      <div class="hero-actions">
-        <button class="btn-primary">Book in 60 Seconds</button>
-        <button class="btn-secondary">See Pricing</button>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Services</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="tel:+13235550192">(323) 555-0192</a>
+    <a href="#contact" class="btn btn-dark">Book Now</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════
+         HERO
+    ══════════════════════ -->
+    <section class="hero container">
+      <h1>Reliable, thorough home<br>cleaning for LA.</h1>
+      <p class="hero-sub">
+        We handle the mess so you don't have to. Trusted by 500+ Los Angeles families
+        — licensed, insured, and always on time.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-dark btn-lg">Book in 60 Seconds</a>
+        <a href="#services" class="btn btn-ghost btn-lg">See Services</a>
       </div>
 
-      <div class="hero-image-wrapper">
-        <img src="hero_regular.png" alt="A bright, cozy, and tidy living room in Los Angeles">
-      </div>
-    </section>
-
-    <!-- How It Works (Bento Grid) -->
-    <section id="how-it-works" class="section">
-      <h2 style="text-align: center; margin-bottom: 40px;">Simple booking. Spotless results.</h2>
-      
-      <div class="bento-grid" style="margin-top: 0;">
-        <div class="bento-card" style="text-align: center; align-items: center;">
-          <div class="card-icon" style="background: rgba(0, 102, 204, 0.1); color: var(--color-primary); border-radius: 50%; width: 64px; height: 64px;">
-            <span style="font-size: 1.5rem; font-weight: 700;">1</span>
-          </div>
-          <h3 class="card-title">Book Online</h3>
-          <p>Pick a date and time that works for you. You'll get instant pricing and an email confirmation immediately.</p>
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          Licensed &amp; Insured
         </div>
-
-        <div class="bento-card" style="text-align: center; align-items: center;">
-          <div class="card-icon" style="background: rgba(0, 102, 204, 0.1); color: var(--color-primary); border-radius: 50%; width: 64px; height: 64px;">
-            <span style="font-size: 1.5rem; font-weight: 700;">2</span>
-          </div>
-          <h3 class="card-title">We Clean Properly</h3>
-          <p>Our vetted cleaners show up on time with all the supplies needed. We don't rush—we do it right.</p>
+        <div class="hero-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          Eco-Friendly Products
         </div>
-
-        <div class="bento-card" style="text-align: center; align-items: center;">
-          <div class="card-icon" style="background: rgba(0, 102, 204, 0.1); color: var(--color-primary); border-radius: 50%; width: 64px; height: 64px;">
-            <span style="font-size: 1.5rem; font-weight: 700;">3</span>
-          </div>
-          <h3 class="card-title">Relax & Enjoy</h3>
-          <p>Come home to a space that looks and smells amazing. Spend your weekend doing what you actually want to do.</p>
+        <div class="hero-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          100% Satisfaction Guarantee
         </div>
       </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section">
-      <div class="bento-grid">
-        
-        <!-- Large Intro Card -->
-        <div class="bento-card span-2" style="background-color: var(--text-primary); color: white;">
-          <h2 style="color: white; margin-bottom: 16px;">Services tailored to your home.</h2>
-          <p style="color: #A1A1A6; max-width: 480px; margin-bottom: 24px;">Whether you just need help keeping up with chores every other week or you're moving out and need the place scrubbed top-to-bottom, we've got you covered.</p>
-          <ul style="list-style-type: none; display: flex; gap: 16px; margin-bottom: 24px;">
-            <li style="display: flex; align-items: center; gap: 8px;"><i data-lucide="check" style="color: #10B981; width: 18px;"></i> Insured</li>
-            <li style="display: flex; align-items: center; gap: 8px;"><i data-lucide="check" style="color: #10B981; width: 18px;"></i> Vetted Staff</li>
-            <li style="display: flex; align-items: center; gap: 8px;"><i data-lucide="check" style="color: #10B981; width: 18px;"></i> Supplies Included</li>
-          </ul>
-        </div>
-
-        <!-- Metric -->
-        <div class="bento-card" style="text-align: center; justify-content: center; align-items: center;">
-          <div class="trust-metric">500+</div>
-          <div style="display: flex; gap: 4px; color: #F59E0B; margin-bottom: 8px;">
-            <i data-lucide="star" fill="currentColor"></i>
-            <i data-lucide="star" fill="currentColor"></i>
-            <i data-lucide="star" fill="currentColor"></i>
-            <i data-lucide="star" fill="currentColor"></i>
-            <i data-lucide="star" fill="currentColor"></i>
-          </div>
-          <p>Happy homes cleaned across LA county.</p>
-        </div>
-
-        <!-- Service Cards -->
-        <div class="bento-card">
-          <div class="card-icon"><i data-lucide="home"></i></div>
-          <h3 class="card-title">Standard Cleaning</h3>
-          <p>Perfect for regular upkeep. Includes dusting, vacuuming, mopping, bathrooms, kitchen surfaces, and taking out the trash.</p>
-        </div>
-
-        <div class="bento-card">
-          <div class="card-icon"><i data-lucide="sparkles"></i></div>
-          <h3 class="card-title">Deep Cleaning</h3>
-          <p>For homes that need a reset. We hit the baseboards, window sills, ceiling fans, and do heavy scrubbing in the kitchen and bath.</p>
-        </div>
-
-        <div class="bento-card">
-          <div class="card-icon"><i data-lucide="box"></i></div>
-          <h3 class="card-title">Move In / Out</h3>
-          <p>To make sure you get your deposit back. We clean inside cabinets, ovens, and fridges so the place is completely empty and spotless.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section" style="padding: 40px 0;">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: white; padding: 40px; border-radius: var(--card-radius); box-shadow: var(--shadow-soft);">
-        <img src="about_cleaning.png" alt="Eco friendly cleaning supplies organized by Dana K Cleaning" style="width: 100%; border-radius: 16px; aspect-ratio: 4/3; object-fit: cover;">
-        <div>
-          <h2 style="margin-bottom: 24px;">Locally owned, locally trusted.</h2>
-          <p style="margin-bottom: 16px;">We know life in Los Angeles is busy. Between the commute, work, and trying to actually enjoy the weekend, cleaning is usually the last thing anyone wants to deal with.</p>
-          <p style="margin-bottom: 24px;">That's why we started Dana K Cleaning. We don't cut corners, we show up on time, and our cleaners are genuinely friendly people who care about doing a great job. We bring our own professional, pet-safe supplies so you don't even have to think about it.</p>
-          <button class="btn-secondary">Meet the Team</button>
+      <div class="hero-img-wrap">
+        <img src="hero_regular.png" alt="A bright, clean, and welcoming Los Angeles living room" loading="eager">
+        <div class="hero-img-badge">
+          <div class="badge-dot"></div>
+          Taking bookings now
         </div>
       </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="section">
-      <h2 style="text-align: center; margin-bottom: 40px;">Don't just take our word for it.</h2>
-      
-      <div class="bento-grid" style="margin-top: 0;">
-        <div class="bento-card">
-          <div style="display: flex; gap: 4px; color: #F59E0B; margin-bottom: 16px;">
-            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
-          </div>
-          <p style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 24px; font-weight: 500;">"They actually showed up exactly on time and were super friendly. Got soap scum out of my shower that I thought was permanent. Worth every penny."</p>
-          <p style="font-weight: 600; font-size: 0.9rem;">— Sarah J., Silver Lake</p>
+    <!-- ══════════════════════
+         STATS
+    ══════════════════════ -->
+    <section class="section-sm container">
+      <div class="stats-strip">
+        <div class="stat-cell">
+          <div class="stat-num"><span class="count" data-target="500">0</span>+</div>
+          <div class="stat-label">Homes Cleaned</div>
         </div>
-
-        <div class="bento-card">
-          <div style="display: flex; gap: 4px; color: #F59E0B; margin-bottom: 16px;">
-            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
-          </div>
-          <p style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 24px; font-weight: 500;">"Booking on the site took two minutes. The house smelled amazing when I came home from work. It's so nice not having to spend my Saturday vacuuming."</p>
-          <p style="font-weight: 600; font-size: 0.9rem;">— Mike T., Culver City</p>
+        <div class="stat-cell">
+          <div class="stat-num"><span class="count" data-target="8">0</span> yrs</div>
+          <div class="stat-label">In Business</div>
         </div>
-
-        <div class="bento-card">
-          <div style="display: flex; gap: 4px; color: #F59E0B; margin-bottom: 16px;">
-            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
-          </div>
-          <p style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 24px; font-weight: 500;">"I've gone through three different LA cleaning services that kept flaking on me. Dana K has been totally reliable for the past six months."</p>
-          <p style="font-weight: 600; font-size: 0.9rem;">— Elena R., West Hollywood</p>
+        <div class="stat-cell">
+          <div class="stat-num"><span class="count" data-target="99">0</span>%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">5.0 ★</div>
+          <div class="stat-label">Google Rating</div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ / Final CTA -->
-    <section class="section">
-      <div class="bento-grid">
-        <div class="bento-card span-2 cta-block" style="text-align: left; align-items: flex-start; padding: 48px;">
-          <h2 style="color: white; margin-bottom: 16px; font-size: 2.5rem;">Take your weekend back.</h2>
-          <p style="color: #A1A1A6; margin-bottom: 32px; font-size: 1.1rem; max-width: none;">Get a transparent price instantly and book your first clean. No hidden fees, no hassle.</p>
-          <div style="display: flex; gap: 16px;">
-            <button class="btn-primary" style="background: white; color: black; padding: 16px 32px; font-size: 1rem;">Book Your Clean</button>
-            <button class="btn-secondary" style="color: white; border: 1px solid rgba(255,255,255,0.2);">Call (323) 555-0192</button>
+    <!-- ══════════════════════
+         SERVICES
+    ══════════════════════ -->
+    <section id="services" class="section container">
+      <div style="text-align:center; margin-bottom: 48px;">
+        <span class="section-label">What We Offer</span>
+        <h2>Services tailored to your home.</h2>
+      </div>
+
+      <div class="bento">
+
+        <!-- Intro card -->
+        <div class="card card-dark col-8" style="display:flex; flex-direction:column; justify-content:space-between; min-height:200px;">
+          <div>
+            <h2 style="color:white; margin-bottom:14px; font-size:clamp(1.5rem,3vw,2rem);">Everything your home needs — we've got it covered.</h2>
+            <p style="color:rgba(255,255,255,0.5); max-width:480px; margin-bottom:24px;">Whether it's a weekly refresh or a full move-out scrub, our vetted team arrives fully equipped with eco-friendly, pet-safe supplies.</p>
+          </div>
+          <div class="check-list" style="flex-direction:row; flex-wrap:wrap; gap:12px; margin-top:0;">
+            <span class="check-item white">
+              <span class="check-dot"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Fully Insured
+            </span>
+            <span class="check-item white">
+              <span class="check-dot"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Vetted Staff
+            </span>
+            <span class="check-item white">
+              <span class="check-dot"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Supplies Included
+            </span>
+            <span class="check-item white">
+              <span class="check-dot"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Eco-Friendly
+            </span>
           </div>
         </div>
 
-        <div class="bento-card" style="background: white;">
-          <h3 style="margin-bottom: 24px;">Common Questions</h3>
-          <div style="margin-bottom: 16px;">
-            <h4 style="font-weight: 600; margin-bottom: 4px;">Do I need to be home?</h4>
-            <p style="font-size: 0.9rem;">Nope! Most clients give us a spare key or door code. Just let us know when you book.</p>
+        <!-- Social proof -->
+        <div class="card col-4" style="text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+          <div class="metric" style="color:var(--blue);">500+</div>
+          <div class="stars" style="justify-content:center; margin:10px 0 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p style="font-size:0.875rem;">Happy homes cleaned across LA county</p>
+        </div>
+
+        <!-- Service cards -->
+        <div class="card col-4">
+          <img class="service-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=75" alt="Standard home cleaning" loading="lazy">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 style="margin-bottom:10px;">Standard Cleaning</h3>
+          <p style="font-size:0.9rem;">Perfect for regular upkeep. Dusting, vacuuming, mopping, bathrooms, kitchen surfaces, and trash removal.</p>
+        </div>
+
+        <div class="card col-4">
+          <img class="service-img" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=75" alt="Deep cleaning service" loading="lazy">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+          </div>
+          <h3 style="margin-bottom:10px;">Deep Cleaning</h3>
+          <p style="font-size:0.9rem;">For homes that need a full reset. Baseboards, ceiling fans, window sills, and heavy scrubbing in kitchen and bath.</p>
+        </div>
+
+        <div class="card col-4">
+          <img class="service-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=75" alt="Move in move out cleaning" loading="lazy">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3 style="margin-bottom:10px;">Move In / Move Out</h3>
+          <p style="font-size:0.9rem;">Get your deposit back. Inside cabinets, ovens, fridges — every corner spotless before you hand over the keys.</p>
+        </div>
+
+        <div class="card col-4">
+          <img class="service-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=75" alt="Office cleaning" loading="lazy">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 style="margin-bottom:10px;">Office Cleaning</h3>
+          <p style="font-size:0.9rem;">Before or after hours — your workspace stays clean without interrupting your workflow.</p>
+        </div>
+
+        <div class="card col-4">
+          <img class="service-img" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=75" alt="Post-construction cleaning" loading="lazy">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-8 8 8v10"/></svg>
+          </div>
+          <h3 style="margin-bottom:10px;">Post-Construction</h3>
+          <p style="font-size:0.9rem;">Dust, debris, and paint residue gone. We make your newly renovated space move-in ready.</p>
+        </div>
+
+        <div class="card col-4">
+          <img class="service-img" src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=75" alt="Event cleaning" loading="lazy">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3 style="margin-bottom:10px;">Pre &amp; Post Event</h3>
+          <p style="font-size:0.9rem;">Host with confidence. We prep before and restore after so your home is perfect for guests — and after.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════
+         HOW IT WORKS
+    ══════════════════════ -->
+    <section id="how-it-works" class="section" style="background:white;">
+      <div class="container">
+        <div style="text-align:center; margin-bottom:48px;">
+          <span class="section-label">The Process</span>
+          <h2>Simple booking. Spotless results.</h2>
+        </div>
+
+        <div class="bento">
+          <div class="card col-4" style="text-align:center; align-items:center; display:flex; flex-direction:column;">
+            <div class="step-num">1</div>
+            <h3 style="margin-bottom:10px;">Book Online</h3>
+            <p>Pick a date and time that works for you. Get instant pricing and a confirmation in under 60 seconds.</p>
+          </div>
+          <div class="card col-4" style="text-align:center; align-items:center; display:flex; flex-direction:column;">
+            <div class="step-num">2</div>
+            <h3 style="margin-bottom:10px;">We Clean Properly</h3>
+            <p>Our vetted cleaners arrive on time with all supplies. We don't rush — we do it right, every single time.</p>
+          </div>
+          <div class="card col-4" style="text-align:center; align-items:center; display:flex; flex-direction:column;">
+            <div class="step-num">3</div>
+            <h3 style="margin-bottom:10px;">Relax &amp; Enjoy</h3>
+            <p>Come home to a space that looks and smells amazing. Spend your weekend the way you actually want to.</p>
+          </div>
+
+          <!-- Trust block -->
+          <div class="card card-blue col-12" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px; padding:32px 40px;">
+            <div>
+              <h3 style="color:white; font-size:1.25rem; margin-bottom:6px;">Not happy? We'll make it right — free.</h3>
+              <p style="color:rgba(255,255,255,0.7); font-size:0.9375rem;">If anything doesn't meet your standards, we return within 24 hours at no charge. That's our guarantee.</p>
+            </div>
+            <a href="#contact" class="btn btn-white-ghost" style="flex-shrink:0;">Book Risk-Free</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════
+         ABOUT
+    ══════════════════════ -->
+    <section id="about" class="section container">
+      <div class="bento">
+
+        <div class="card col-6" style="padding:0; overflow:hidden;">
+          <img src="about_cleaning.png" alt="Eco-friendly cleaning products used by Dana K Cleaning" style="width:100%; height:100%; object-fit:cover; min-height:340px;">
+        </div>
+
+        <div class="card col-6" style="display:flex; flex-direction:column; justify-content:center;">
+          <span class="section-label">About Us</span>
+          <h2 style="margin-bottom:20px;">Locally owned. Locally trusted.</h2>
+          <p style="margin-bottom:14px;">We know life in Los Angeles is busy. Between the commute, work, and trying to actually enjoy the weekend, cleaning is usually the last thing anyone wants to deal with.</p>
+          <p style="margin-bottom:28px;">That's why we started Dana K Cleaning. We don't cut corners, we show up on time, and our cleaners are genuine professionals who care about doing an exceptional job. We bring our own professional, pet-safe supplies — so you don't even have to think about it.</p>
+          <div class="check-list">
+            <div class="check-item">
+              <span class="check-dot"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Background-checked team members
+            </div>
+            <div class="check-item">
+              <span class="check-dot"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Non-toxic, pet &amp; child-safe products
+            </div>
+            <div class="check-item">
+              <span class="check-dot"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Fully licensed, bonded &amp; insured
+            </div>
+            <div class="check-item">
+              <span class="check-dot"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Serving LA since 2018
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional about images -->
+        <div class="card col-4" style="padding:0; overflow:hidden; min-height:220px;">
+          <img src="https://images.unsplash.com/photo-1527515637462-cff94edd59c6?auto=format&fit=crop&w=600&q=75" alt="Professional cleaner at work" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div class="card col-4" style="padding:0; overflow:hidden; min-height:220px;">
+          <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=600&q=75" alt="Eco-friendly cleaning supplies" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div class="card card-green col-4" style="display:flex; flex-direction:column; justify-content:center;">
+          <div class="metric" style="color:var(--green);">100%</div>
+          <h3 style="margin:12px 0 8px;">Satisfaction</h3>
+          <p style="font-size:0.9rem;">We don't stop until you're genuinely happy with the result. Our re-clean guarantee has you covered.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════
+         REVIEWS
+    ══════════════════════ -->
+    <section id="reviews" class="section" style="background:white;">
+      <div class="container">
+        <div style="text-align:center; margin-bottom:48px;">
+          <span class="section-label">Client Reviews</span>
+          <h2>Don't just take our word for it.</h2>
+        </div>
+
+        <div class="bento">
+
+          <div class="card col-4">
+            <div class="stars" aria-label="5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="review-text">"They showed up exactly on time and got soap scum out of my shower that I thought was permanent. Worth every penny."</p>
+            <p class="reviewer">— Sarah J., Silver Lake</p>
+          </div>
+
+          <div class="card col-4">
+            <div class="stars" aria-label="5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="review-text">"Booking took two minutes. The house smelled amazing when I got home. It's so nice not spending my Saturday vacuuming."</p>
+            <p class="reviewer">— Mike T., Culver City</p>
+          </div>
+
+          <div class="card col-4">
+            <div class="stars" aria-label="5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="review-text">"I've gone through three LA cleaning services that kept flaking on me. Dana K has been totally reliable every month for six months."</p>
+            <p class="reviewer">— Elena R., West Hollywood</p>
+          </div>
+
+          <div class="card col-4">
+            <div class="stars" aria-label="5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="review-text">"Used them for a post-construction clean after our kitchen reno. Dust was everywhere. They made it spotless. Truly impressive work."</p>
+            <p class="reviewer">— David &amp; Amy K., Los Feliz</p>
+          </div>
+
+          <div class="card col-4">
+            <div class="stars" aria-label="5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="review-text">"Got my security deposit back in full. The landlord literally texted me to say the apartment was the cleanest she'd ever seen it. Amazing."</p>
+            <p class="reviewer">— Jasmine L., Echo Park</p>
+          </div>
+
+          <div class="card col-4">
+            <div class="stars" aria-label="5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="review-text">"Our office in Santa Monica has never been this clean. The team is fast, thorough, and super respectful of our space. Highly recommend."</p>
+            <p class="reviewer">— Carlos M., Santa Monica</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════
+         SERVICE AREAS
+    ══════════════════════ -->
+    <section class="section container">
+      <div class="bento">
+        <div class="card col-12" style="text-align:center;">
+          <span class="section-label">Where We Work</span>
+          <h2 style="margin-bottom:10px;">Serving Greater Los Angeles</h2>
+          <p style="max-width:520px; margin:0 auto 28px;">We cover homes and offices across the LA metro area. Don't see your neighborhood? Just ask — we're always expanding.</p>
+          <div class="area-tags" style="justify-content:center;">
+            <span class="area-tag">Silver Lake</span>
+            <span class="area-tag">Echo Park</span>
+            <span class="area-tag">Los Feliz</span>
+            <span class="area-tag">West Hollywood</span>
+            <span class="area-tag">Beverly Hills</span>
+            <span class="area-tag">Santa Monica</span>
+            <span class="area-tag">Culver City</span>
+            <span class="area-tag">Brentwood</span>
+            <span class="area-tag">Pasadena</span>
+            <span class="area-tag">Koreatown</span>
+            <span class="area-tag">Sherman Oaks</span>
+            <span class="area-tag">Studio City</span>
+            <span class="area-tag">Burbank</span>
+            <span class="area-tag">Glendale</span>
+            <span class="area-tag">Manhattan Beach</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════
+         FAQ
+    ══════════════════════ -->
+    <section id="faq" class="section" style="background:white;">
+      <div class="container">
+        <div class="bento">
+
+          <div class="col-5" style="grid-column:span 5;">
+            <span class="section-label">FAQ</span>
+            <h2 style="margin-bottom:16px;">Common questions.</h2>
+            <p style="margin-bottom:32px;">Can't find what you're looking for? Call us directly at <strong style="color:var(--text-primary);">(323) 555-0192</strong>.</p>
+            <a href="#contact" class="btn btn-dark">Book a Clean</a>
+          </div>
+
+          <div class="col-7" style="grid-column:span 7;">
+            <div class="faq-list" id="faqList">
+
+              <div class="faq-item open">
+                <button class="faq-q">
+                  Do I need to be home during the cleaning?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <p class="faq-a">Nope! Most clients give us a spare key or a door code. We work just as well without you there. Just let us know your preference when you book.</p>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q">
+                  Do you bring your own cleaning supplies?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <p class="faq-a">Yes — we bring everything, including a vacuum. All products are eco-friendly and pet-safe. If you'd prefer we use a specific product of yours, just leave it out and we'll use it.</p>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q">
+                  How is your pricing determined?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <p class="faq-a">Pricing is based on the type of service, the size of your home, and the frequency of cleanings. Recurring clients get a discounted rate. We always provide a flat-rate quote before booking — no surprises.</p>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q">
+                  What if I'm not happy with the clean?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <p class="faq-a">We'll come back within 24 hours and re-clean any area you're not satisfied with — completely free of charge. Your satisfaction is our guarantee.</p>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q">
+                  Are your cleaners background-checked?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <p class="faq-a">Every single one. All team members go through a thorough background check and in-person interview before joining. We're fully insured and bonded as well.</p>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q">
+                  Can I set up a recurring schedule?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <p class="faq-a">Absolutely — and we recommend it. Recurring clients (weekly, bi-weekly, or monthly) receive a discounted rate and get the same team member each visit for consistency.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════
+         CONTACT / BOOK
+    ══════════════════════ -->
+    <section id="contact" class="section container">
+      <div class="bento">
+
+        <!-- CTA card -->
+        <div class="card card-dark col-6" style="display:flex; flex-direction:column; justify-content:space-between; min-height:400px;">
+          <div>
+            <span class="section-label" style="color:rgba(255,255,255,0.4);">Get Started</span>
+            <h2 style="color:white; margin-bottom:16px; font-size:clamp(1.75rem,3vw,2.25rem);">Take your weekend back.</h2>
+            <p style="color:rgba(255,255,255,0.5); margin-bottom:32px;">Get a transparent price instantly and book your first clean. No hidden fees, no hassle.</p>
           </div>
           <div>
-            <h4 style="font-weight: 600; margin-bottom: 4px;">Do you bring supplies?</h4>
-            <p style="font-size: 0.9rem;">Yes, we bring everything needed, including a vacuum. If you want us to use a specific product of yours, just leave it out.</p>
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <div style="display:flex; align-items:center; gap:12px;">
+                <div style="width:36px;height:36px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38a2 2 0 0 1 1.99-2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.05em;">Phone</div>
+                  <div style="font-size:0.9375rem;font-weight:600;color:white;">(323) 555-0192</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px;">
+                <div style="width:36px;height:36px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.05em;">Email</div>
+                  <div style="font-size:0.9375rem;font-weight:600;color:white;">hello@danakcleaning.com</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px;">
+                <div style="width:36px;height:36px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.05em;">Hours</div>
+                  <div style="font-size:0.9375rem;font-weight:600;color:white;">Mon – Sat, 8 AM – 6 PM</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Form -->
+        <div class="card col-6">
+          <h3 style="margin-bottom:6px;">Request a Free Quote</h3>
+          <p style="font-size:0.875rem; margin-bottom:24px;">No commitment required. Flat-rate pricing, always.</p>
+
+          <form id="quoteForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name</label>
+                <input class="form-input" type="text" id="firstName" placeholder="Jane" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name</label>
+                <input class="form-input" type="text" id="lastName" placeholder="Smith" required autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" placeholder="jane@example.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone</label>
+              <input class="form-input" type="tel" id="phone" placeholder="(323) 555-0000" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">Service Needed</label>
+              <select class="form-input form-select" id="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option>Standard Cleaning</option>
+                <option>Deep Cleaning</option>
+                <option>Move In / Move Out</option>
+                <option>Post-Construction</option>
+                <option>Office / Commercial</option>
+                <option>Pre &amp; Post Event</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Details <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+              <textarea class="form-input" id="message" rows="3" placeholder="Home size, frequency, anything specific…" style="resize:vertical;min-height:76px;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark btn-lg" style="width:100%; justify-content:center; border-radius:var(--radius-sm); margin-top:4px;" id="submitBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              Send My Request
+            </button>
+            <p style="text-align:center;font-size:0.75rem;color:var(--text-secondary);margin-top:12px;">We respond within 48 hours. No spam, ever.</p>
+          </form>
+        </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- Large Footer -->
-  <footer style="background: var(--card-bg); border-top: 1px solid rgba(0,0,0,0.05); padding: 60px 0 20px;">
+  <!-- ══════════════════════
+       FOOTER
+  ══════════════════════ -->
+  <footer class="footer">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px;">
+      <div class="footer-top">
         <div>
-          <h3 style="font-size: 1.25rem; margin-bottom: 16px;">Dana K Cleaning</h3>
-          <p style="font-size: 0.9rem; margin-bottom: 16px;">Making Los Angeles homes sparkle, one room at a time.</p>
-          <p style="font-size: 0.9rem; font-weight: 600;">(323) 555-0192</p>
-          <p style="font-size: 0.9rem;">hello@danakcleaning.com</p>
+          <div class="footer-logo">Dana K Cleaning</div>
+          <p class="footer-tagline">Making Los Angeles homes sparkle, one room at a time.</p>
+          <p class="footer-contact-item">(323) 555-0192</p>
+          <p class="footer-contact-item">hello@danakcleaning.com</p>
+          <p class="footer-contact-item" style="margin-top:4px;font-size:0.8125rem;color:rgba(255,255,255,0.35);">Mon – Sat, 8 AM – 6 PM</p>
         </div>
-        
         <div>
-          <h4 style="font-weight: 600; margin-bottom: 16px;">Services</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem; color: var(--text-secondary);">
-            <li>Standard Cleaning</li>
-            <li>Deep Cleaning</li>
-            <li>Move In / Move Out</li>
-            <li>Recurring Service</li>
-            <li>Office Cleaning</li>
-          </ul>
+          <div class="footer-col-title">Services</div>
+          <nav class="footer-links">
+            <a href="#services">Standard Cleaning</a>
+            <a href="#services">Deep Cleaning</a>
+            <a href="#services">Move In / Move Out</a>
+            <a href="#services">Office Cleaning</a>
+            <a href="#services">Post-Construction</a>
+            <a href="#services">Event Cleaning</a>
+          </nav>
         </div>
-
         <div>
-          <h4 style="font-weight: 600; margin-bottom: 16px;">Target Areas</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem; color: var(--text-secondary);">
-            <li>Silver Lake</li>
-            <li>Echo Park</li>
-            <li>Los Feliz</li>
-            <li>West Hollywood</li>
-            <li>Santa Monica</li>
-            <li>Culver City</li>
-          </ul>
+          <div class="footer-col-title">Service Areas</div>
+          <nav class="footer-links">
+            <a href="#contact">Silver Lake</a>
+            <a href="#contact">West Hollywood</a>
+            <a href="#contact">Santa Monica</a>
+            <a href="#contact">Culver City</a>
+            <a href="#contact">Pasadena</a>
+            <a href="#contact">Beverly Hills</a>
+          </nav>
         </div>
-        
         <div>
-          <h4 style="font-weight: 600; margin-bottom: 16px;">Company</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem; color: var(--text-secondary);">
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>FAQ</li>
-            <li>Terms of Service</li>
-            <li>Privacy Policy</li>
-          </ul>
+          <div class="footer-col-title">Company</div>
+          <nav class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#faq">FAQ</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Book Now</a>
+          </nav>
         </div>
       </div>
-      
-      <div style="text-align: center; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 20px;">
-        &copy; 2026 Dana K Cleaning. All rights reserved.
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Dana K Cleaning. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
       </div>
     </div>
   </footer>
 
   <script>
-    lucide.createIcons();
-    // Show nav links on desktop
-    if(window.innerWidth > 768) {
-      document.querySelector('.nav-links').style.display = 'flex';
+    /* ── Mobile nav ── */
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    menu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        menu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    /* ── Counter animation ── */
+    function animateCount(el) {
+      const target = +el.dataset.target;
+      const dur = 1400;
+      const t0 = performance.now();
+      (function step(t) {
+        const p = Math.min((t - t0) / dur, 1);
+        el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target);
+        if (p < 1) requestAnimationFrame(step);
+      })(performance.now());
     }
+    const co = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); co.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.count').forEach(el => co.observe(el));
+
+    /* ── FAQ accordion ── */
+    document.getElementById('faqList').addEventListener('click', e => {
+      const btn = e.target.closest('.faq-q');
+      if (!btn) return;
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+
+    /* ── Form submit ── */
+    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Sent! We'll be in touch.`;
+      btn.style.background = '#10B981';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> Send My Request`;
+        btn.style.background = '';
+        btn.disabled = false;
+        this.reset();
+      }, 4000);
+    });
   </script>
 </body>
 </html>
